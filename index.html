@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Proyecto Invernadero</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="index.js"></script>
+</head>
+<body>
+<nav id="pagina_completa">
+<nav id="cuadrotitulo">
+<!--titulo--> 
+  <div class="titulo"><h1><font face="Georgia">Invernadero Automata</font></h1></div>
+<!--titulo--> 
+  <div class="lista">  
+    <ul class="item_lista"><button id="boton_lum" onclick="mostrarOcultar0()"><a>Menú Principal</a></button></ul>
+
+    <ul class="item_lista">Sensor de Luminosidad
+      <ul class="desplegable">
+        <li class="item_des">Ultimos Registros<ul class="exp"><li>Extension de prueba 1</li></ul></li>      
+        <li class="item_des">Registros criticos<ul class="exp"><li>Extension de prueba 2</li></ul></li>       
+        <li><button id="boton_lum" onclick="mostrarOcultar1()"><a class="item_des" >Detalles</a></button></li>
+      </ul>       
+    </ul>
+
+    <ul class="item_lista">Sensor de Proximidad
+      <ul class="desplegable">
+        <li><a class="item_des">Ultimos Registros</a><ul class="exp"><li><a>Extension de prueba 1</a></li></ul></li>
+        <li><a class="item_des">Registros criticos</a><ul class="exp"><li><a>Extension de prueba 2</a></li></ul></li>       
+        <li><button id="boton_prox" onclick="mostrarOcultar2()"><a class="item_des">Detalles</a></button></li>
+      </ul>
+    </ul>
+
+    <ul class="item_lista"><a>Sensor de Humedad</a>
+      <ul class="desplegable">
+        <li><a class="item_des">Ultimos Registros</a><ul class="exp"><li><a>Extension de prueba 1</a></li></ul></li>
+        <li><a class="item_des">Registros criticos</a><ul class="exp"><li><a>Extension de prueba 2</a></li></ul></li>       
+        <li><button id="boton_hum" onclick="mostrarOcultar3()"><a class="item_des">Detalles</a></button></li>
+      </ul>
+    </ul>
+    
+    <ul class="item_lista"><a>Sensor de Temperatura</a>
+      <ul class="desplegable">
+        <li><a class="item_des">Ultimos Registros</a><ul class="exp"><li><a>Extension de prueba 1</a></li></ul></li>        
+        <li><a class="item_des">Registros criticos</a><ul class="exp"><li><a>Extension de prueba 2</a></li></ul></li>       
+        <li><button id="boton_temp" onclick="mostrarOcultar4()"><a class="item_des">Detalles</a></button></li>
+      </ul>    
+    </ul>
+    
+  </div>
+</nav>        <!--cierre navlist-->
+<nav id="menu_principal">
+  <div class="subtitulo">
+    <a>Menu Principal</a>
+  </div>
+
+  <div class="parrafo">
+    <a>Esto es un parrafo de introduccion</a>
+  </div>
+</nav>
+<!--------Detalles Registro Luminosidad------------->
+
+<nav id="sensor_luz"> 
+  <div class="subtitulo">
+    <h1>Sensor de Luminosidad</h1>
+  </div>
+  
+  <div class="parrafo">
+    <a>El modulo de fotorresistencia permite regular la iluminación en función de la luz ambiental. Esto permite proporcionar la cantidad adecuada de luz artificial cuando es necesaria, asegurando un entorno óptimo para el crecimiento de las plantas en el invernadero.</a>
+  </div>   
+  <div class="tabla">   
+    <table>
+      <thead>
+        <a class="event"><h1>Eventos Registrados 1</h1></a>
+        <tr>
+          <th>Fecha</th>
+          <th>Registro</th>
+          <th>Proceso activado</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>xx/xx/xxxx xx:xx</td>
+          <td>Esto es un texto</td>
+          <td>Esto es una accion</td>
+        </tr>
+        <tr>
+          <td>xx/xx/xxxx xx:xx</td>
+          <td>Esto es un texto</td>
+          <td>Esto es una accion</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</nav>
+<!--------Detalles Registro Proximidad------------->
+<nav id="sensor_prox">
+  <div class="subtitulo">
+    <h1>Sensor de Proximidad</h1>
+  </div>  
+  
+  <div class="parrafo">
+    <a>Se puede medir la distancia entre el sensor y un objeto, al detectar un objeto a una distancia determinada activa el servomotor que abre un toldo, Esto permite automatizar el proceso de apertura y cierre del toldo en función de las condiciones ambientales y las necesidades del invernadero, asegurando un control eficiente del clima y la iluminación.</a>
+  </div>  
+  <div class="tabla">   
+    <table>
+      <thead>
+        <a class="event"><h1>Eventos Registrados 2</h1></a>
+        <tr>
+          <th>Fecha</th>
+          <th>Registro</th>
+          <th>Proceso activado</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>xx/xx/xxxx xx:xx</td>
+          <td>Esto es un texto</td>
+          <td>Esto es una accion</td>
+        </tr>
+        <tr>
+          <td>xx/xx/xxxx xx:xx</td>
+          <td>Esto es un texto</td>
+          <td>Esto es una accion</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</nav>
+
+<!--------Detalles Registro Humedad------------->
+
+<nav id="sensor_hum">
+  <div class="subtitulo">
+    <h1>Sensor de Humedad</h1>
+  </div>  
+  
+  <div class="parrafo">
+    <a>Esto debiera ser un parrafo sobre el sensor</a>
+  </div>  
+  <div class="tabla">   
+    <table>
+      <thead>
+        <a class="event"><h1>Eventos Registrados 3</h1></a>
+        <tr>
+          <th>Fecha</th>
+          <th>Registro</th>
+          <th>Proceso activado</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>xx/xx/xxxx xx:xx</td>
+          <td>Esto es un texto</td>
+          <td>Esto es una accion</td>
+        </tr>
+        <tr>
+          <td>xx/xx/xxxx xx:xx</td>
+          <td>Esto es un texto</td>
+          <td>Esto es una accion</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</nav>
+
+<!--------Detalles Registro temperatura------------->
+
+<nav id="sensor_temp">
+  <div class="subtitulo">
+    <h1>Sensor de Temperatura</h1>
+  </div>  
+  
+  <div class="parrafo">
+    <a>Esto debiera ser un parrafo sobre el sensor</a>
+  </div>  
+  <div class="tabla">   
+    <table>
+      <thead>
+        <a class="event"><h1>Eventos Registrados 4</h1></a>
+        <tr>
+          <th>Fecha</th>
+          <th>Registro</th>
+          <th>Proceso activado</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>xx/xx/xxxx xx:xx</td>
+          <td>Esto es un texto</td>
+          <td>Esto es una accion</td>
+        </tr>
+        <tr>
+          <td>xx/xx/xxxx xx:xx</td>
+          <td>Esto es un texto</td>
+          <td>Esto es una accion</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</nav>
+
+<!--------Pie de pagina------------->
+
+<footer>
+  <p>ArvPixel© 2023. Todos los derechos reservados.</p>
+  <nav>
+     <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+     </ul>
+  </nav>
+</footer>
+</nav> 
+</body>
+</html>
